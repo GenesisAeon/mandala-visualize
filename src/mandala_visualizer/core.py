@@ -24,11 +24,25 @@ def render_mandala(
     if type == "cosmic-web":
         G = nx.star_graph(20)
         pos = nx.spring_layout(G, seed=42)
-        nx.draw(G, pos=pos, ax=ax, with_labels=True, node_color="#6a0dad", edge_color="#c0a0ff")
+        nx.draw(
+            G,
+            pos=pos,
+            ax=ax,
+            with_labels=True,
+            node_color="#6a0dad",
+            edge_color="#c0a0ff",
+        )
     elif type == "entropy-gate":
         G = nx.petersen_graph()
         pos = nx.circular_layout(G)
-        nx.draw(G, pos=pos, ax=ax, with_labels=True, node_color="#0d6a6a", edge_color="#a0ffd0")
+        nx.draw(
+            G,
+            pos=pos,
+            ax=ax,
+            with_labels=True,
+            node_color="#0d6a6a",
+            edge_color="#a0ffd0",
+        )
     ax.set_title(f"{type.capitalize()} Mandala", fontsize=14)
     fig.tight_layout()
     return fig
@@ -44,7 +58,9 @@ def climate_dashboard() -> plt.Figure:
 
     t = np.linspace(0, 10, 300)
     axes[0].plot(t, np.sin(t * 1.618), label="Entropy Wave (φ)", color="#6a0dad")
-    axes[0].plot(t, np.cos(t * 1.618 / 2), label="Resonance", color="#0d6a6a", linestyle="--")
+    axes[0].plot(
+        t, np.cos(t * 1.618 / 2), label="Resonance", color="#0d6a6a", linestyle="--"
+    )
     axes[0].legend()
     axes[0].set_title("Climate Entropy Dashboard")
     axes[0].set_xlabel("Time")
@@ -92,4 +108,7 @@ def bind_to_utac(beta: float = 0.0625) -> str:
 
         return str(beta_fit([1.0, 2.0], [0.5, 1.0]))
     except ImportError:
-        return f"UTAC binding (beta={beta}) available with 'pip install mandala-visualizer[stack]'"
+        return (
+            f"UTAC binding (beta={beta}) available with"
+            " 'pip install mandala-visualizer[stack]'"
+        )

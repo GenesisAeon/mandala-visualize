@@ -1,8 +1,5 @@
 """Tests for the mviz CLI commands."""
 
-from pathlib import Path
-
-import pytest
 from typer.testing import CliRunner
 
 from mandala_visualizer.cli import app
@@ -11,13 +8,17 @@ runner = CliRunner()
 
 
 def test_render_cosmic_web(tmp_path):
-    result = runner.invoke(app, ["render", "--type", "cosmic-web", "--output", str(tmp_path / "out.png")])
+    result = runner.invoke(
+        app, ["render", "--type", "cosmic-web", "--output", str(tmp_path / "out.png")]
+    )
     assert result.exit_code == 0, result.output
     assert (tmp_path / "out.png").exists()
 
 
 def test_render_entropy_gate(tmp_path):
-    result = runner.invoke(app, ["render", "--type", "entropy-gate", "--output", str(tmp_path / "eg.png")])
+    result = runner.invoke(
+        app, ["render", "--type", "entropy-gate", "--output", str(tmp_path / "eg.png")]
+    )
     assert result.exit_code == 0, result.output
     assert (tmp_path / "eg.png").exists()
 

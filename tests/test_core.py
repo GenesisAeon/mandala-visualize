@@ -2,7 +2,6 @@
 
 import matplotlib
 import matplotlib.pyplot as plt
-import pytest
 
 matplotlib.use("Agg")  # non-interactive backend for tests
 

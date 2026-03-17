@@ -2,6 +2,6 @@
 
 __version__ = "0.1.0"
 
-from .core import render_mandala, climate_dashboard, mermaid_grafana_bridge
+from .core import climate_dashboard, mermaid_grafana_bridge, render_mandala
 
 __all__ = ["render_mandala", "climate_dashboard", "mermaid_grafana_bridge"]

@@ -24,13 +24,17 @@ class MandalaVisualizerBridge:
     def add_visual(self, key: str, value: str) -> None:
         """Add a visual relation to the entropy table."""
         if not self._available or self.table is None:
-            raise RuntimeError("entropy-table not installed. Run: pip install mandala-visualizer[stack]")
+            raise RuntimeError(
+                "entropy-table not installed; pip install mandala-visualizer[stack]"
+            )
         self.table.add_relation(key, value)
 
     def export(self, filepath: Path | str = "domains.yaml") -> Path:
         """Export the entropy table to a YAML file."""
         if not self._available or self.table is None:
-            raise RuntimeError("entropy-table not installed. Run: pip install mandala-visualizer[stack]")
+            raise RuntimeError(
+                "entropy-table not installed; pip install mandala-visualizer[stack]"
+            )
         self.table.export(filepath)
         return Path(filepath)
 

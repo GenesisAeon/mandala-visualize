@@ -12,7 +12,7 @@ from .core import climate_dashboard, mermaid_grafana_bridge, render_mandala
 
 app = typer.Typer(
     name="mviz",
-    help="Mandala-Visualizer CLI – fraktal visuals, climate dashboards, and Mermaid bridges.",
+    help="Mandala-Visualizer CLI – fraktal visuals, dashboards, Mermaid bridges.",
     add_completion=False,
 )
 console = Console()
@@ -20,8 +20,12 @@ console = Console()
 
 @app.command()
 def render(
-    type: Annotated[str, typer.Option(help="Mandala type: cosmic-web or entropy-gate")] = "cosmic-web",
-    output: Annotated[Path, typer.Option(help="Output PNG file path")] = Path("mandala.png"),
+    type: Annotated[
+        str, typer.Option(help="Mandala type: cosmic-web or entropy-gate")
+    ] = "cosmic-web",
+    output: Annotated[Path, typer.Option(help="Output PNG file path")] = Path(
+        "mandala.png"
+    ),
 ) -> None:
     """Render a MandalaMap and save it as a PNG."""
     fig = render_mandala(type)  # type: ignore[arg-type]
@@ -31,7 +35,9 @@ def render(
 
 @app.command()
 def dashboard(
-    output: Annotated[Path, typer.Option(help="Output PNG file path")] = Path("climate-dashboard.png"),
+    output: Annotated[Path, typer.Option(help="Output PNG file path")] = Path(
+        "climate-dashboard.png"
+    ),
 ) -> None:
     """Render the Climate Entropy Dashboard and save it as a PNG."""
     fig = climate_dashboard()
