@@ -1,0 +1,13 @@
+domains:
+  mandala-visualizer:
+    cosmic_web_nodes: 20
+    entropy_wave_freq: 1.618
+    render_types:
+      - cosmic-web
+      - entropy-gate
+    integrations:
+      - utac-core
+      - sigillin
+      - field-theory
+      - cosmic-moment
+      - entropy-table
