@@ -6,10 +6,14 @@
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![PyPI](https://img.shields.io/pypi/v/mandala-visualizer)](https://pypi.org/project/mandala-visualizer/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19076281.svg)](https://doi.org/10.5281/zenodo.19076281)
 
 ---
 
 ## Install
+
+**DOI**: [10.5281/zenodo.19076281](https://doi.org/10.5281/zenodo.19076281)
+**PyPI**: `pip install mandala-visualizer` (oder `pip install "mandala-visualizer[stack]"` für den vollen GenesisAeon-Stack)
 
 ```bash
 pip install mandala-visualizer
