@@ -1,88 +1,86 @@
 # CLI Reference
 
-## `diamond scaffold`
+The `mviz` CLI provides three commands for rendering mandalas, dashboards, and generating Mermaid graphs.
 
-Create a new project from a template.
+---
+
+## `mviz render`
+
+Render a fraktal MandalaMap and save it as a PNG file.
 
 ```
-Usage: diamond scaffold [OPTIONS] PROJECT_NAME
-
-Arguments:
-  PROJECT_NAME  Name of the new project (kebab-case recommended)
+Usage: mviz render [OPTIONS]
 
 Options:
-  -t, --template TEXT       Template to use [default: minimal]
-  -o, --output-dir PATH     Parent directory for the new project
-  --author TEXT             Author name
-  --description TEXT        Short project description
-  --python-version TEXT     Minimum Python version (e.g. 3.11)
-  --dry-run                 Preview files without writing them
+  --type TEXT    Mandala type: cosmic-web or entropy-gate  [default: cosmic-web]
+  --output PATH  Output PNG file path  [default: mandala.png]
+  --help         Show this message and exit.
 ```
 
 **Examples**
 
 ```bash
-# Minimal project in the current directory
-diamond scaffold my-lib
+# Render the default cosmic-web mandala
+mviz render
 
-# Genesis preset with custom author
-diamond scaffold my-physics-tool --template genesis --author "Ada Lovelace"
+# Render an entropy-gate mandala
+mviz render --type entropy-gate
 
-# Preview what would be created
-diamond scaffold my-lib --dry-run
-
-# Output to a specific directory
-diamond scaffold my-lib --output-dir ~/projects
+# Custom output path
+mviz render --type cosmic-web --output my-mandala.png
 ```
 
 ---
 
-## `diamond list-templates`
+## `mviz dashboard`
 
-List all available templates with their descriptions.
+Render the Climate Entropy Dashboard (entropy wave + fractal mandala pattern) and save as PNG.
+
+```
+Usage: mviz dashboard [OPTIONS]
+
+Options:
+  --output PATH  Output PNG file path  [default: climate-dashboard.png]
+  --help         Show this message and exit.
+```
+
+**Examples**
 
 ```bash
-diamond list-templates
+# Render dashboard with default output name
+mviz dashboard
+
+# Custom output path
+mviz dashboard --output my-dashboard.png
 ```
 
 ---
 
-## `diamond validate`
+## `mviz bridge`
 
-Validate a project directory against diamond-setup best practices.
+Print a Mermaid graph string for Grafana integration. The output can be pasted directly into a Grafana Mermaid panel.
 
 ```
-Usage: diamond validate [PATH]
+Usage: mviz bridge [OPTIONS]
 
-Arguments:
-  PATH  Project directory to validate [default: current directory]
+Options:
+  --help  Show this message and exit.
 ```
 
-Checks performed:
+**Example output**
 
-| Check | Level |
-|-------|-------|
-| `pyproject.toml` present | **Error** |
-| `src/` layout present | Warning |
-| `tests/` directory present | Warning |
-| `.github/workflows/` present | Warning |
-| `README.md` present | Warning |
-| `.gitignore` present | Warning |
+```
+graph TD
+  A[Entropy] --> B[Governance]
+  B --> C[Cosmic Moment]
+  C --> D[MandalaMap]
+  D --> A
+```
 
 ```bash
-# Validate the current directory
-diamond validate
+# Print Mermaid graph to stdout
+mviz bridge
 
-# Validate a specific project
-diamond validate path/to/my-project
-```
-
----
-
-## `diamond version`
-
-Print the installed version.
-
-```bash
-diamond version
+# Pipe to file for Grafana import
+mviz bridge > grafana-mandala.mmd
 ```
