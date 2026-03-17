@@ -80,3 +80,17 @@ addopts = "--cov=mandala_visualizer --cov-report=term-missing -v"
 [tool.coverage.run]
 source = ["src"]
 omit = ["tests/*"]
+
+# Override non-PyPI stack packages with impossible markers so uv can lock
+# without requiring them. They are still declared in [stack] for pip users.
+[tool.uv]
+override-dependencies = [
+    "utac-core>=0.1.0 ; python_version < '0'",
+    "sigillin>=0.1.0 ; python_version < '0'",
+    "field-theory>=0.1.0 ; python_version < '0'",
+    "cosmic-moment>=0.1.0 ; python_version < '0'",
+    "medium-modulation>=0.1.0 ; python_version < '0'",
+    "entropy-governance>=0.1.0 ; python_version < '0'",
+    "entropy-table>=1.0.1 ; python_version < '0'",
+    "implosive-genesis>=0.4.0 ; python_version < '0'",
+]
