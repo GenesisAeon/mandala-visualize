@@ -1,7 +1,7 @@
-[project]
+﻿[project]
 name = "mandala-visualizer"
-version = "0.1.0"
-description = "The visual mandala renderer for the GenesisAeon stack – Climate Dashboard, Cosmic-Web, Mermaid/Grafana integration and fraktal MandalaMap visuals."
+version = "0.3.1"
+description = "The visual mandala renderer for the GenesisAeon stack â€“ Climate Dashboard, Cosmic-Web, Mermaid/Grafana integration and fraktal MandalaMap visuals."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
@@ -94,3 +94,4 @@ override-dependencies = [
     "entropy-table>=1.0.1 ; python_version < '0'",
     "implosive-genesis>=0.4.0 ; python_version < '0'",
 ]
+
