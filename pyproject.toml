@@ -1,4 +1,4 @@
-﻿[project]
+[project]
 name = "mandala-visualizer"
 version = "0.3.1"
 description = "The visual mandala renderer for the GenesisAeon stack â€“ Climate Dashboard, Cosmic-Web, Mermaid/Grafana integration and fraktal MandalaMap visuals."
