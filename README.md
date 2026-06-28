@@ -4,7 +4,8 @@
 
 [![CI](https://github.com/GenesisAeon/mandala-visualizer/actions/workflows/ci.yml/badge.svg)](https://github.com/GenesisAeon/mandala-visualizer/actions/workflows/ci.yml)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: GPL v3+](https://img.shields.io/badge/Code%20License-GPLv3--or--later-blue.svg)](LICENSE-CODE)
+[![Docs License: CC BY 4.0](https://img.shields.io/badge/Docs%20License-CC%20BY%204.0-lightgrey.svg)](LICENSE-DOCS)
 [![PyPI](https://img.shields.io/pypi/v/mandala-visualizer)](https://pypi.org/project/mandala-visualizer/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19076281.svg)](https://doi.org/10.5281/zenodo.19076281)
 
@@ -89,6 +90,20 @@ With `pip install mandala-visualizer[stack]`, mandala-visualizer integrates with
 responsible for mandala layout & fractal rendering — turning CREP/UTAC
 state from upstream packages (`utac-core`, `sigillin`, `entropy-table`,
 `cosmic-moment`) into visual mandala maps and dashboards.
+
+## License
+
+This repository is **dual-licensed**:
+
+- **Source code** (`src/`, `tests/`, and other code files) is licensed
+  under the [GNU General Public License v3.0 or later](LICENSE-CODE)
+  (GPL-3.0-or-later).
+- **Documentation** (this README, `docs/`, `CHANGELOG.md`, and other
+  prose/Markdown content) is licensed under
+  [Creative Commons Attribution 4.0 International](LICENSE-DOCS)
+  (CC BY 4.0).
+
+See [LICENSE](LICENSE) for details.
 
 ## Citation
 
