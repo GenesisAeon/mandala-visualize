@@ -10,10 +10,7 @@
 
 ---
 
-## Install
-
-**DOI**: [10.5281/zenodo.19076281](https://doi.org/10.5281/zenodo.19076281)
-**PyPI**: `pip install mandala-visualizer` (oder `pip install "mandala-visualizer[stack]"` für den vollen GenesisAeon-Stack)
+## Installation
 
 ```bash
 pip install mandala-visualizer
@@ -21,7 +18,9 @@ pip install mandala-visualizer
 pip install mandala-visualizer[stack]
 ```
 
-## CLI Usage
+## Usage
+
+### CLI
 
 ```bash
 # Render a Cosmic-Web mandala (saves cosmic-web.png)
@@ -37,7 +36,7 @@ mviz dashboard
 mviz bridge
 ```
 
-## Python API
+### Python API
 
 ```python
 from mandala_visualizer import render_mandala, climate_dashboard, mermaid_grafana_bridge
@@ -83,6 +82,20 @@ With `pip install mandala-visualizer[stack]`, mandala-visualizer integrates with
 | `field-theory` | Field equations for mandala geometry |
 | `entropy-table` | Domain relation tracking |
 | `cosmic-moment` | Temporal anchoring |
+
+## Role in the GenesisAeon Ecosystem
+
+`mandala-visualizer` is **P-MANDALA-VIZ** in the GenesisAeon ecosystem,
+responsible for mandala layout & fractal rendering — turning CREP/UTAC
+state from upstream packages (`utac-core`, `sigillin`, `entropy-table`,
+`cosmic-moment`) into visual mandala maps and dashboards.
+
+## Citation
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19076281.svg)](https://doi.org/10.5281/zenodo.19076281)
+
+This package is archived on Zenodo. Please cite the DOI above when
+referencing `mandala-visualizer` in academic work.
 
 ---
 
