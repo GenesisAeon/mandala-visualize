@@ -1,17 +1,18 @@
 [project]
 name = "mandala-visualizer"
-version = "0.3.1"
-description = "The visual mandala renderer for the GenesisAeon stack â€“ Climate Dashboard, Cosmic-Web, Mermaid/Grafana integration and fraktal MandalaMap visuals."
+version = "1.0.0"
+description = "The visual mandala renderer for the GenesisAeon stack – Climate Dashboard, Cosmic-Web, Mermaid/Grafana integration and fraktal MandalaMap visuals."
 readme = "README.md"
 requires-python = ">=3.11"
-license = { text = "MIT" }
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE-CODE"]
 authors = [{ name = "GenesisAeon Team", email = "team@genesisaeon.org" }]
 keywords = ["mandala", "visualization", "climate", "cosmic-web", "fractal", "dashboard"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Environment :: Console",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
@@ -34,13 +35,16 @@ stack = [
     "cosmic-moment>=0.1.0",
     "medium-modulation>=0.1.0",
     "entropy-governance>=0.1.0",
-    "entropy-table>=1.0.1",
-    "implosive-genesis>=0.4.0",
+    "entropy-table>=2.0.0",
+    "implosive-genesis>=1.0.0",
 ]
 dev = [
     "pytest>=8.0",
     "pytest-cov>=5.0",
     "ruff>=0.9",
+    "mypy>=1.13",
+    "types-networkx>=3.3",
+    "types-PyYAML>=6.0",
 ]
 docs = [
     "mkdocs>=1.6",
@@ -91,7 +95,7 @@ override-dependencies = [
     "cosmic-moment>=0.1.0 ; python_version < '0'",
     "medium-modulation>=0.1.0 ; python_version < '0'",
     "entropy-governance>=0.1.0 ; python_version < '0'",
-    "entropy-table>=1.0.1 ; python_version < '0'",
-    "implosive-genesis>=0.4.0 ; python_version < '0'",
+    "entropy-table>=2.0.0 ; python_version < '0'",
+    "implosive-genesis>=1.0.0 ; python_version < '0'",
 ]
 

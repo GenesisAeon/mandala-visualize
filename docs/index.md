@@ -5,7 +5,8 @@
 [![CI](https://github.com/GenesisAeon/mandala-visualizer/actions/workflows/ci.yml/badge.svg)](https://github.com/GenesisAeon/mandala-visualizer/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/mandala-visualizer)](https://pypi.org/project/mandala-visualizer/)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/GenesisAeon/mandala-visualizer/blob/main/LICENSE)
+[![License: GPL v3+](https://img.shields.io/badge/Code%20License-GPLv3--or--later-blue.svg)](https://github.com/GenesisAeon/mandala-visualizer/blob/main/LICENSE-CODE)
+[![Docs License: CC BY 4.0](https://img.shields.io/badge/Docs%20License-CC%20BY%204.0-lightgrey.svg)](https://github.com/GenesisAeon/mandala-visualizer/blob/main/LICENSE-DOCS)
 [![Coverage: 73%](https://img.shields.io/badge/coverage-73%25-yellow)](https://github.com/GenesisAeon/mandala-visualizer)
 
 ## Install
