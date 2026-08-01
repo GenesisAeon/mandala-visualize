@@ -7,7 +7,7 @@
 [![License: GPL v3+](https://img.shields.io/badge/Code%20License-GPLv3--or--later-blue.svg)](LICENSE-CODE)
 [![Docs License: CC BY 4.0](https://img.shields.io/badge/Docs%20License-CC%20BY%204.0-lightgrey.svg)](LICENSE-DOCS)
 [![PyPI](https://img.shields.io/pypi/v/mandala-visualizer)](https://pypi.org/project/mandala-visualizer/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19076281.svg)](https://doi.org/10.5281/zenodo.19076281)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20998515.svg)](https://doi.org/10.5281/zenodo.20998515)
 
 ---
 
@@ -107,7 +107,7 @@ See [LICENSE](LICENSE) for details.
 
 ## Citation
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19076281.svg)](https://doi.org/10.5281/zenodo.19076281)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20998515.svg)](https://doi.org/10.5281/zenodo.20998515)
 
 This package is archived on Zenodo. Please cite the DOI above when
 referencing `mandala-visualizer` in academic work.
