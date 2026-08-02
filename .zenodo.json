@@ -1,5 +1,5 @@
 {
-  "title": "mandala-visualizer — P-MANDALA-VIZ: mandala layout & fractal rendering",
+  "title": "mandala-visualizer — P80 (formerly P-MANDALA-VIZ): mandala layout & fractal rendering",
   "description": "<p>The visual mandala renderer for the GenesisAeon stack – Climate Dashboard, Cosmic-Web, Mermaid/Grafana integration and fraktal MandalaMap visuals.</p><p>Part of the <strong>GenesisAeon</strong> ecosystem (P-MANDALA-VIZ, domain: mandala layout & fractal rendering).</p><p>Dual-licensed: source code under GNU GPL v3.0-or-later, documentation under CC BY 4.0.</p><p>See <a href=\"https://github.com/GenesisAeon/mandala-visualize\">github.com/GenesisAeon/mandala-visualize</a> for source, documentation, and reproducibility notebooks.</p>",
   "creators": [
     {

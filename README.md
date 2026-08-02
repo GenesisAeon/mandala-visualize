@@ -86,7 +86,7 @@ With `pip install mandala-visualizer[stack]`, mandala-visualizer integrates with
 
 ## Role in the GenesisAeon Ecosystem
 
-`mandala-visualizer` is **P-MANDALA-VIZ** in the GenesisAeon ecosystem,
+`mandala-visualizer` is **P80** (formerly informally "P-MANDALA-VIZ") in the GenesisAeon ecosystem,
 responsible for mandala layout & fractal rendering — turning CREP/UTAC
 state from upstream packages (`utac-core`, `sigillin`, `entropy-table`,
 `cosmic-moment`) into visual mandala maps and dashboards.
